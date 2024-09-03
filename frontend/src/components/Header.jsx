@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import fractalis_logo from '/fractalis_logo.png'
+import fractalisLogo from '/fractalis_logo.png'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,7 +9,7 @@ function Header() {
       <div className="mx-auto px-6 py-4 flex justify-between items-center border-b border-blue-600 uppercase text-sm">
         {/* Logo */}
         <div className="flex items-center">
-          <img src={fractalis_logo} alt="Fractalis Logo" className="h-12" />
+          <img src={fractalisLogo} alt="Fractalis Logo" className="h-12" />
         </div>
 
         {/* Hamburger Menu Icon for Mobile */}

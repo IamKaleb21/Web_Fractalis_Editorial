@@ -1,13 +1,13 @@
-import hero_image from '../assets/hero_section_image.png'; // Reemplaza con la ruta de tu imagen
+import heroImage from '../assets/hero_section_image.png'; // Reemplaza con la ruta de tu imagen
 
 function HeroSection() {
   return (
-    <section className="relative h-[500px] md:h-[500px] my-5 mx-3">
+    <section className="relative h-[400px] md:h-[500px] my-5 mx-3">
       {/* Background Image */}
       <img
-        src={hero_image}
+        src={heroImage}
         alt="Fractal background"
-        className="w-full object-cover"
+        className="w-full h-full object-cover"
       />
 
       {/* Overlay */}
