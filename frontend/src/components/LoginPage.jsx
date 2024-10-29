@@ -1,4 +1,4 @@
-import fractalisLogo from '/fractalis_logo.png';
+import fractalisLogo from '/biomatic_logo.png';
 
 function LoginPage() {
   return (

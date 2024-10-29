@@ -1,22 +1,22 @@
 import { useState } from 'react'
-import fractalisLogo from '/fractalis_logo.png'
+import biofMatLogo from '/biofmat_logo.webp'
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-white shadow relative z-10">
-      <div className="mx-auto px-6 py-4 flex justify-between items-center border-b border-blue-600 uppercase text-sm">
+    <header className="bg-white shadow relative z-10 mx-auto">
+      <div className="px-6 py-4 flex justify-between items-center border-1.5 border-primary uppercase text-sm">
         {/* Logo */}
-        <div className="flex items-center">
-          <img src={fractalisLogo} alt="Fractalis Logo" className="h-12" />
-        </div>
+        <a className="flex items-center" href='/'>
+          <img src={biofMatLogo} alt="BiofMat Logo" className="h-12"/>
+        </a>
 
         {/* Hamburger Menu Icon for Mobile */}
         <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="text-blue-900 hover:text-blue-700 focus:outline-none"
+            className="text-primary hover:text-primary-700 focus:outline-none"
           >
             <svg
               className="w-6 h-6"
@@ -43,25 +43,25 @@ function Header() {
         >
           <a
             href="/"
-            className="block px-4 py-2 text-blue-900 hover:text-blue-700 font-semibold md:inline-block"
+            className="block px-4 py-2 text-primary hover:text-primary-700 font-semibold md:inline-block"
           >
             Inicio
           </a>
           <a
-            href="/books"
-            className="block px-4 py-2 text-blue-900 hover:text-blue-700 font-semibold md:inline-block"
+            href="/store"
+            className="block px-4 py-2 text-primary hover:text-primary-700 font-semibold md:inline-block"
           >
-            Libros y Módulos
+            Tienda
           </a>
           <a
             href="/courses"
-            className="block px-4 py-2 text-blue-900 hover:text-blue-700 font-semibold md:inline-block"
+            className="block px-4 py-2 text-primary hover:text-primary-700 font-semibold md:inline-block"
           >
             Cursos Virtuales
           </a>
           <a
             href="/blog"
-            className="block px-4 py-2 text-blue-900 hover:text-blue-700 font-semibold md:inline-block"
+            className="block px-4 py-2 text-primary hover:text-primary-700 font-semibold md:inline-block"
           >
             Blog Educativo
           </a>
@@ -69,13 +69,13 @@ function Header() {
           <div className='space-x-4'>
             <a
               href="/contact"
-              className="block px-4 py-2 text-blue-900 hover:text-blue-700 font-semibold md:inline-block"
+              className="block px-4 py-2 text-primary hover:text-primary-700 font-semibold md:inline-block"
             >
               Contáctanos
             </a>
             <a
               href="/login"
-              className="block px-4 py-2 text-blue-900 hover:text-blue-700 font-semibold md:inline-block"
+              className="block px-4 py-2 text-primary hover:text-primary-700 font-semibold md:inline-block"
             >
               Login
             </a>

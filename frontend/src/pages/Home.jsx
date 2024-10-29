@@ -1,23 +1,28 @@
 // src/pages/Home.jsx
-import GradientRectangle from "../assets/rectangle_gradient.png";
-import Footer from "../components/Footer";
+import Footer from "../components/Footer"
 import Header from '../components/Header'
 import HeroSection from '../components/HeroSection'
-import InfoSection from '../components/InfoSection';
-import PopularSection from '../components/PopularSection';
+import InfoSection from '../components/InfoSection'
+import PopularSection from '../components/PopularSection'
+import DocumentHead from '../components/DocumentHead'
 
 function Home() {
   return (
+    <>
+    <DocumentHead title="BiofMat - Home" />
     <div>
       <Header />
       <HeroSection />
       <PopularSection />
       <InfoSection />
-      <div className="flex-col border border-blue-600 mx-3">
-        <img src={GradientRectangle} alt="" className="" />
+      <div className="mx-3">
+        <div className="border-1.5 border-primary bg-radial-custom place-self-center w-full h-48">
+        </div>
       </div>
+      
       <Footer />
     </div>
+    </>
   );
 }
 
